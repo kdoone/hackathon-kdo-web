@@ -7,8 +7,7 @@ axios.defaults.baseURL =
         : "https://boom-brains-api.kdo.one";
 
 axios.interceptors.request.use(config => {
-    const accessToken = store.getters["auth/accessToken"];
-    const language = store.getters["language/currentLanguage"];
+    const accessToken = store.getters["auth/accessToken"];    
 
     config.headers["Content-type"] = "application/json";
 
@@ -21,7 +20,7 @@ axios.interceptors.request.use(config => {
         config.headers.Accept = "application/json";
     } else {
         config.headers.Authorization = null;
-        config.headers["Secret-key"] = "BoomBrains";
+        config.headers["Secret-key"] = "Hackathon";
     }
 
     return config;
