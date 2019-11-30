@@ -33,11 +33,10 @@
       <InputCard :style="{margin: 0}">
         <input
             class="input"
-            v-model="formData.iin"
-            type="tel" 
-            pattern="[0-9]*"
-            maxlength="12" 
+            :value="formData.iin"
+            @input="setFormData($event)"
             placeholder="ИИН"
+            maxlength="12"
         />
       </InputCard>
     </IdentityCard>
@@ -54,8 +53,15 @@ export default {
         surname: "",
         name: "",
         middleName: "",
-        iin: ""
+        iin: "12"
       } 
+    }
+  },
+  methods: {
+    setFormData(e) {
+      const iin = e.target.value;
+      this.formData.iin = iin.replace(/[^0-9]/g, "");
+      e.target.value = this.formData.iin;
     }
   },
   components: {

@@ -6,9 +6,8 @@
         <InputCard>
           <input
               class="input"
-              v-model="formData.numberCard"
-              type="tel"               
-              pattern="[0-9]*"
+              :value="formData.numberCard"
+              @input="setFormData($event)"
               maxlength="9" 
               placeholder="Номер"
           />
@@ -18,12 +17,6 @@
         <div class="card__img"><img src="../../assets/img/card-scan.png" alt=""></div>
         <div class="card__inputs">          
           <InputCard>
-            <!-- <input
-                class="input"
-                v-model="formData.city"
-                type="name"
-                placeholder="Город"
-            /> -->
             <select class="input" placeholder="Город">
               <option value="01">Город</option>
               <option value="02">Almaty </option>
@@ -43,19 +36,17 @@
       <div class="card__block">
         <InputCard :style="{margin: 0}">        
           <input
+              type="date"
               class="input input--min"
               v-model="formData.from"
-              type="tel"
-              pattern="\d*" maxlength="4" 
               placeholder="от"
           />        
         </InputCard>
         <InputCard :style="{margin: 0}">
           <input
+              type="date"
               class="input input--min"
               v-model="formData.to"
-              type="tel"
-              pattern="\d*" maxlength="4" 
               placeholder="до"
           />
         </InputCard>
@@ -82,7 +73,14 @@ export default {
   components: {
     IdentityCard,
     InputCard
-  }
+  },
+  methods: {
+    setFormData(e) {
+      const iin = e.target.value;
+      this.formData.iin = iin.replace(/[^0-9]/g, "");
+      e.target.value = this.formData.iin;
+    }
+  },
 }
 </script>
 
