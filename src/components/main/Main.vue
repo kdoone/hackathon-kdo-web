@@ -1,7 +1,7 @@
 <template>
   <div >
     <div class="main inverse">
-      <a href=""><img src="@/assets/img/zhssb.svg" alt=""></a>
+      <a href="" class="main__logo"><img src="@/assets/img/zhssb.svg" alt=""></a>
       <h2 class="main__quantity">47 241</h2>
       <div class="main__text">Столько счастливых семей уже приобрели жилье</div>
       <router-link to="" class="button">Приобрести</router-link>
@@ -32,9 +32,21 @@ export default {
     align-items: center;
     justify-content: center;
 
+    &__logo {
+      max-width: 250px;
+    }
+
     &__quantity {
-      font-size: 144px;
+      font-size: 94px;
       font-weight: bold;
+    }
+
+    &__text {
+      margin-bottom: 50px;
+    }
+
+    .button {
+      margin-bottom: 20px;
     }
   }
 </style>
