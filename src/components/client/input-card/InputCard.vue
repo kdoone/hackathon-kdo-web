@@ -13,44 +13,61 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .input-div {
     margin-bottom: 20px;
     width: 100%;
+    &.last {
+      margin-bottom: 0;
+    }
 }
 
 .input,
 .textarea {
     outline: none;
-    font-size: 14px;
-    text-align: center;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: normal;
     line-height: inherit;
-    background: #fbfbfb;
-    border: 1px solid #eeeeee;
-    border-radius: 47px;
-    padding: 15px 10px;
-    max-width: 294px;
+    background: #EEF4F2;
+    color: #B5B5B5;
+    border-radius: 4.08897px;
+    border: 1px solid #EEF4F2;
+    padding: 5px 5px 5px 15px;
+    max-width: 330px;
     width: 100%;
+    flex-grow: 1;
     position: relative;
 
+    &--min {
+      max-width: 150px;
+    }
+
+    &--big {
+      max-width: 390px;
+      padding: 10px 25px;
+      background: #fff;
+    }
+
+    &:focus,
+    &:hover {
+      border: 1px solid #B6F6F0;
+    }
+        
+
     &::-webkit-input-placeholder {
-        color: #b4b4b4;
-        text-decoration: underline;
+        color: #B5B5B5;
         font-weight: normal;
         opacity: 1;
     }
 
     &::-moz-placeholder {
-        color: #b4b4b4;
-        text-decoration: underline;
+        color: #B5B5B5;
         font-weight: normal;
         opacity: 1;
     }
 
     &:-ms-input-placeholder {
-        color: #b4b4b4;
-        text-decoration: underline;
+        color: #B5B5B5;
         font-weight: normal;
         opacity: 1;
     }

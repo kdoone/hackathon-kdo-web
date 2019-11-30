@@ -2,6 +2,7 @@
     <div>
       Registration
       <ClientData />
+        
     </div>
 </template>
 
@@ -10,11 +11,13 @@ import ClientData from "../client/ClientData.vue";
 
 export default {
     components: {
-      ClientData
+      ClientData,
     },
     data() {
         return {
-            
+           formData: {
+             email: ""
+           } 
         };
     },
 };
