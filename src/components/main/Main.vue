@@ -4,8 +4,8 @@
       <a href="" class="main__logo"><img src="@/assets/img/zhssb.svg" alt=""></a>
       <h2 class="main__quantity">47 241</h2>
       <div class="main__text">Столько счастливых семей уже приобрели жилье</div>
-      <router-link to="" class="button">Приобрести</router-link>
-      <router-link to="" class="inverse">Войти</router-link>
+      <router-link to="/registration" class="button">Приобрести</router-link>
+      <router-link to="/login" class="inverse">Войти</router-link>
     </div>
   </div>
 </template>

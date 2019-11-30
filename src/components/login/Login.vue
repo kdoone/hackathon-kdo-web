@@ -1,16 +1,13 @@
 <template>
     <div>
-      Registration
-      <ClientData />
+      Login
     </div>
 </template>
 
 <script>
-import ClientData from "../client/ClientData.vue";
 
 export default {
     components: {
-      ClientData
     },
     data() {
         return {
