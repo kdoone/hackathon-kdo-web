@@ -21,7 +21,24 @@ export const router = new Router({
         {
             path: "/registration",
             name: "registration",
-            component: () => import("../components/registration/Registration.vue")
+            component: () => import("../components/registration/Registration.vue"),
+            children: [
+              // {
+              //     path: "/registration/categories",
+              //     name: "categories",
+              //     component: () => import("../components/categories/Categories.vue"),
+              // },
+              {
+                  path: "programs",
+                  name: "programs",
+                  component: () => import("../components/programs/Programs.vue")
+              },
+              {
+                  path: "registration/clien-data",
+                  name: "clien-data",
+                  component: () => import("../components/client/ClientData.vue")
+              },
+          ]
         },
     ]
 });
