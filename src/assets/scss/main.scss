@@ -2,8 +2,9 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
-$default_family: Roboto, Arial, sans-serif;
-$text_color: #888888;
+$default_family: OpenSans, Arial, sans-serif;
+$text_color: #008B8A;
+$accent: #008B8A;
 
 body {
 	min-width: 320px;
@@ -25,6 +26,22 @@ a {
   &:hover {
     text-decoration: none !important;
   }
+}
+
+.inverse {
+  color: #fff;
+}
+
+.button {
+  max-width: 199px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  color: $accent;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 58px;
 }
 
 // input focus
@@ -128,7 +145,7 @@ a {
 }
 
 // $grid-gutter-width: 20px;
-$grid-gutter-width: 10px;
+$grid-gutter-width: 30px;
 $grid-columns: 12;
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1370px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1330px);

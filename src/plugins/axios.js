@@ -11,9 +11,9 @@ axios.interceptors.request.use(config => {
 
     config.headers["Content-type"] = "application/json";
 
-    if (language) {
-        config.headers["App-Language"] = language;
-    }
+    // if (language) {
+    //     config.headers["App-Language"] = language;
+    // }
 
     if (accessToken) {
         config.headers.Authorization = "Bearer " + accessToken;

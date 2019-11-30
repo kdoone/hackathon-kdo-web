@@ -1,6 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
 import App from "./App";
+// import VeeValidate from "vee-validate";
+import * as VeeValidate from 'vee-validate';
 import { router } from "./router";
 import { store } from "./store";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -35,6 +37,7 @@ import "./plugins/axios";
 
 // Vue use
 Vue.use(Router);
+Vue.use(VeeValidate);
 Vue.config.productionTip = false;
 
 new Vue({

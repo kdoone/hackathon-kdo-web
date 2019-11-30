@@ -12,7 +12,17 @@ export const router = new Router({
             path: '/',
             name: 'home-page',
             component: () => import('../components/home-page/HomePage.vue')
-        }
+        },
+        // {
+        //   path: "/login",
+        //   name: "login",
+        //   component: () => import("../components/login/Login.vue")
+        // },
+        // {
+        //     path: "/registration",
+        //     name: "registration",
+        //     component: () => import("../components/registration/Registration.vue")
+        // },
     ]
 });
 
