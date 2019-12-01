@@ -43,6 +43,11 @@ export const router = new Router({
                     name: "thanks",
                     component: () => import("../components/thanks/Thanks.vue")
                 },
+                {
+                  path: "/home-target",
+                  name: "home-target",
+                  component: () => import("../components/home/HomeTarget.vue")
+              },
             ]
         },
         // {
