@@ -1,12 +1,10 @@
 <template>
   <div class="aside">
     <router-view />
-    <Categories />
   </div>
 </template>
 
 <script>
-import Categories from "../categories/Categories.vue"
 export default {
   data() {
     return {
@@ -14,7 +12,6 @@ export default {
     }
   },
   components: {
-    Categories
   }
 }
 </script>

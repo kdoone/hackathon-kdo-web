@@ -19,42 +19,42 @@ export const router = new Router({
           component: () => import("../components/login/Login.vue")
         },
         {
-            path: "/layout",
+            path: "/",
             name: "layout",
             component: () => import("../components/layout/Layout.vue"),
-            // children: [
-            //     // {
-            //     //     path: "/registration/categories",
-            //     //     name: "categories",
-            //     //     component: () => import("../components/categories/Categories.vue"),
-            //     // },
-            //     {
-            //         path: "/registration/programs",
-            //         name: "programs",
-            //         component: () => import("../components/programs/Programs.vue")
-            //     },
-            //     {
-            //         path: "/registration/client-data",
-            //         name: "client-data",
-            //         component: () => import("../components/client/ClientData.vue")
-            //     },
-            // ]
+            children: [
+                {
+                    path: "/categories",
+                    name: "categories",
+                    component: () => import("../components/categories/Categories.vue"),
+                },
+                {
+                    path: "/programs",
+                    name: "programs",
+                    component: () => import("../components/programs/Programs.vue")
+                },
+                {
+                    path: "/client-data",
+                    name: "client-data",
+                    component: () => import("../components/client/ClientData.vue")
+                },
+            ]
         },
-        {
-            path: "/categories",
-            name: "categories",
-            component: () => import("../components/categories/Categories.vue"),
-        },
-        {
-            path: "/programs",
-            name: "programs",
-            component: () => import("../components/programs/Programs.vue")
-        },
-        {
-            path: "/client-data",
-            name: "client-data",
-            component: () => import("../components/client/ClientData.vue")
-        },
+        // {
+        //     path: "/categories",
+        //     name: "categories",
+        //     component: () => import("../components/categories/Categories.vue"),
+        // },
+        // {
+        //     path: "/programs",
+        //     name: "programs",
+        //     component: () => import("../components/programs/Programs.vue")
+        // },
+        // {
+        //     path: "/client-data",
+        //     name: "client-data",
+        //     component: () => import("../components/client/ClientData.vue")
+        // },
     ]
 });
 
