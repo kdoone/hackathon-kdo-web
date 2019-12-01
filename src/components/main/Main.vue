@@ -20,8 +20,8 @@ export default {
   .main-layout {
     background-image: url("../../assets/img/client-back.jpg");
     width: 100%;
-    height: 100%;
-    padding: 50px 0;
+    // height: 100%;
+    // padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;

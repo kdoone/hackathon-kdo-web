@@ -38,6 +38,11 @@ export const router = new Router({
                     name: "client-data",
                     component: () => import("../components/client/ClientData.vue")
                 },
+                {
+                    path: "/thanks",
+                    name: "thanks",
+                    component: () => import("../components/thanks/Thanks.vue")
+                },
             ]
         },
         // {

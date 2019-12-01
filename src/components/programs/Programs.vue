@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="programs">
     <router-link to="/client-data">
       <div class="program">
         <div class="program__block">
@@ -54,14 +54,24 @@ export default {
 </script>
 
 <style lang="scss">
+  .programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
   .program {
     max-width: 400px;
     width: 100%;
-    background-image: url("../../assets/img/program-back.jpg");
+    background-image: url("../../assets/img/program-back.png");
     background-size: cover;
+    border-radius: 8.38938px;
+    overflow: hidden;
     color: #fff;
     display: flex;
     padding: 20px 25px;
+    margin-bottom: 25px;
 
     &__title {
       font-size: 22px;

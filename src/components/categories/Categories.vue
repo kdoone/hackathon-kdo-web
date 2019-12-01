@@ -46,7 +46,7 @@ export default {
     max-width: 400px;
     display: flex;
     flex-wrap: wrap;
-    
+    padding: 50px 0;
   }
 
   .category {
