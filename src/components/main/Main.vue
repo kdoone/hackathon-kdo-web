@@ -1,5 +1,5 @@
 <template>
-  <div class="aside">
+  <div class="main-layout">
     <router-view />
   </div>
 </template>
@@ -17,10 +17,11 @@ export default {
 </script>
 
 <style lang="scss">
-  .aside {
+  .main-layout {
     background-image: url("../../assets/img/client-back.jpg");
     width: 100%;
     height: 100%;
+    padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;

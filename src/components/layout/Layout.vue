@@ -1,17 +1,17 @@
 <template>
     <div class="layout">
       <Sidebar />
-      <Aside />
+      <Main />
     </div>
 </template>
 
 <script>
-import Aside from "../aside/Aside.vue";
+import Main from "../main/Main.vue";
 import Sidebar from "../sidebar/Sidebar.vue";
 
 export default {
   components: {
-    Aside,
+    Main,
     Sidebar
   }
 }
@@ -20,8 +20,7 @@ export default {
 <style lang="scss">
     .layout {
         width: 100%;
-        // height: 100%;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
 
     }

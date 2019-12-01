@@ -50,7 +50,6 @@ export default {
 .sidebar {
     max-width: 100px;
     width: 100%;
-    height: 100%;
     background: #008B8A;
     padding: 40px 0;
     text-align: center;
