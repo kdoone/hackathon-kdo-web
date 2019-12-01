@@ -41,8 +41,8 @@ export default {
 <style lang="scss">
   .client {
     padding: 50px 0;
-    background-image: url("../../assets/img/client-back.jpg");
-    background-size: cover;
+    // background-image: url("../../assets/img/client-back.jpg");
+    // background-size: cover;
     background-position: center 0;
     background-repeat: no-repeat;
     box-sizing: border-box;
