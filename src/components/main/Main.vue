@@ -19,9 +19,8 @@ export default {
 <style lang="scss">
   .main-layout {
     background-image: url("../../assets/img/client-back.jpg");
+    background-size: cover;
     width: 100%;
-    // height: 100%;
-    // padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;

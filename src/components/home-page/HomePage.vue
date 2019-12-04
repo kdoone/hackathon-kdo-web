@@ -1,9 +1,9 @@
 <template>
   <div >
-    <div class="main inverse">
-      <a href="" class="main__logo"><img src="@/assets/img/zhssb.svg" alt=""></a>
-      <h2 class="main__quantity">47 241</h2>
-      <div class="main__text">Столько счастливых семей уже приобрели жилье</div>
+    <div class="home-page inverse">
+      <a href="/" class="home-page__logo"><img src="@/assets/img/zhssb.svg" alt=""></a>
+      <h2 class="home-page__quantity">47 241</h2>
+      <div class="home-page__text">Столько счастливых семей уже приобрели жилье</div>
       <router-link to="/categories" class="button">Приобрести</router-link>
       <router-link to="/login" class="inverse">Войти</router-link>
     </div>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .main {
+  .home-page {
     background-image: url("../../assets/img/main-back.jpg");
     background-position: center center;
     background-size: contain;

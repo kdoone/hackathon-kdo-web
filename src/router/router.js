@@ -19,7 +19,7 @@ export const router = new Router({
           component: () => import("../components/login/Login.vue")
         },
         {
-            path: "/",
+            path: "/registration",
             name: "layout",
             component: () => import("../components/layout/Layout.vue"),
             children: [
@@ -50,34 +50,5 @@ export const router = new Router({
               },
             ]
         },
-        // {
-        //     path: "/categories",
-        //     name: "categories",
-        //     component: () => import("../components/categories/Categories.vue"),
-        // },
-        // {
-        //     path: "/programs",
-        //     name: "programs",
-        //     component: () => import("../components/programs/Programs.vue")
-        // },
-        // {
-        //     path: "/client-data",
-        //     name: "client-data",
-        //     component: () => import("../components/client/ClientData.vue")
-        // },
     ]
 });
-
-// router.beforeEach((to, from, next) => {
-//     const accessToken = store.getters["auth/accessToken"];
-
-//     if (
-//         to.path === "/login" ||
-//         to.path === "/registration" ||
-//         to.path === "/forget"
-//     ) {
-//         return accessToken ? next("/profile") : next();
-//     }
-
-//     return accessToken ? next() : next("/login");
-// });
